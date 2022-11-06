@@ -1,0 +1,16 @@
+.task {
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    position: absolute;
+    width: 736px;
+    height: 287px;
+    left: calc(50% - 736px/2);
+    top: 291px;
+}
+
+.listTask {
+    margin-top: 24px;
+}

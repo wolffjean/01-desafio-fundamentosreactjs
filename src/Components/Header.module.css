@@ -1,0 +1,35 @@
+.header {
+    background: var(--gray-700);
+    height: 200px;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+}
+
+.logo {
+    width: 126px;
+    height: 48px;
+    left: 657px;
+    top: 72px;
+}
+
+.header img {
+    position: absolute;
+    width: 22px;
+    height: 36px;
+    left: calc(50% - 22px/2 - 52px);
+    top: 82px;
+}
+
+.header span {
+    position: absolute;
+    width: 92px;
+    height: 48px;
+    left: calc(50% - 92px/2 + 17px);
+    top: 72px;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 48px;
+    color: #4EA8DE;
+}
