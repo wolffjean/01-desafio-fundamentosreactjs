@@ -12,7 +12,6 @@
 }
 
 .inputTask input {
-    color: var(--white);
     box-sizing: border-box;
     flex-direction: row;
     align-items: center;
@@ -44,4 +43,26 @@
     color: var(--white);
     margin-left: 8px;
     cursor: pointer;
+}
+
+.summary{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 2px;
+    gap: 8px;
+    position: absolute;
+    width: 736px;
+    height: 54px;
+    left: calc(50% - 736px/2);
+    top: 250px;
+}
+
+.created span{
+    margin-left: 5px;
+}
+
+.done span{
+    margin-left: 5px;
 }

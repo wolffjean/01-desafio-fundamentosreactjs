@@ -6,6 +6,7 @@ export function InputTask() {
     const [newTask, setNewTask] = useState('');
     const [tasks, setTasks] = useState(['']);
 
+    const quantity = tasks.length; 
     function handleCreateNewTask() {
         event.preventDefault();
         setTasks([...tasks, newTask]);
@@ -28,6 +29,16 @@ export function InputTask() {
                     />
                     <button>Criar</button>
                 </form>
+            </div>
+            <div className={styles.summary}>
+                <div className={styles.created}>
+                    <strong>Tarefas Criadas</strong>
+                    <span>{1}</span>
+                </div>
+                <div className={styles.done}>
+                    <strong>Concluidas</strong>
+                    <span>{5} de {5}</span>
+                </div>
             </div>
             <Task />
         </div>

@@ -1,16 +1,63 @@
-.task {
-    background-color: var(--white);
+.taskContainer {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: flex-start;
-    padding: 0px;
     position: absolute;
     width: 736px;
-    height: 287px;
+    height: 40px;
     left: calc(50% - 736px/2);
-    top: 291px;
+    top: 290px;
+    flex:1;
 }
 
-.listTask {
-    margin-top: 24px;
+.taskContainer hr {
+    width: 736px;
+}
+
+.task{
+    box-sizing: border-box;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 16px;
+    gap: 12px;
+    color: var(--white);
+    width: 736px;
+    height: 72px;
+
+    background: var(--gray-500);
+
+    border: 1px solid var(--gray-400);
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.06);
+    border-radius: 8px;
+}
+
+.task input {
+    display: block;
+    font-size: 0.875rem;
+    line-height: 1.6;
+    margin-top: 0.5rem;
+}
+
+.task span {
+    display: block;
+    font-size: 0.875rem;
+    line-height: 1.6;
+    margin-top: 0.3rem;
+}
+
+.task button {
+    background: transparent;
+    border:0;
+    color: var(--gray-400);
+    cursor: pointer;
+    line-height: 0;
+    border-radius: 4px;
+}
+.task button:hover{
+    color: var(--red-500);
+}
+.task button svg {
+    margin-top: 0.3rem;
 }
