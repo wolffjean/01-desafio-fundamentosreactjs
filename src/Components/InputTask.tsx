@@ -1,14 +1,17 @@
 import { useState } from "react";
 import styles from "./InputTask.module.css";
 import { Task } from "./Task";
+import {v4 as uuidv4} from 'uuid';
 
 export function InputTask() {
     const [newTask, setNewTask] = useState('');
-    const [tasks, setTasks] = useState(['']);
+    const [tasks, setTasks] = useState(['primeira task']);
 
     const quantity = tasks.length; 
+
     function handleCreateNewTask() {
         event.preventDefault();
+        console.log(quantity);
         setTasks([...tasks, newTask]);
         setNewTask('');
     }
@@ -40,7 +43,15 @@ export function InputTask() {
                     <span>{5} de {5}</span>
                 </div>
             </div>
-            <Task />
+            <div>
+                {tasks.map(task=>{
+                    return (
+                        <Task 
+                            task={task}
+                        />
+                    )
+                })}
+            </div>
         </div>
     )
 }

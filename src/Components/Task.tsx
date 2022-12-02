@@ -1,13 +1,16 @@
-import { StackSimple, Trash } from "phosphor-react";
+import { Trash } from "phosphor-react";
 import styles from "./task.module.css";
 
-export function Task() {
+interface TaskProps {
+    task: string
+}
 
+export function Task({task}: TaskProps) {
     return (
         <div className={styles.taskContainer}>
             <div className={styles.task}>
                 <input type="radio" />
-                <span>{'tarefa 1'}</span>
+                <span>{task}</span>
                 <button title="Deletar comentario">
                     <Trash size={24}/>
                 </button>
